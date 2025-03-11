@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(55deg, rgba(56, 105, 220, 0.715), rgba(57, 207, 57, 0.555), rgba(237, 47, 47, 0.646));
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensure vertical stacking */
+  height: 120vh;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loading-container {
+  text-align: center;
+  width: 300px;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #12dea8;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.shark-image, .hummingbird-image {
+  position: absolute;
+  height: 50px; /* Adjust size as needed */
+  top: -5px; /* Adjust positioning */
+}
+
+.shark-image {
+  left: 2px;
+  transform: translateX(-50%);
+}
+
+.hummingbird-image {
+  right: 2px;
+  transform: translateX(50%);
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #240e0e;
+}
+
+.continue-button {
+  margin-top: 40px; /* Increased spacing below animation */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #12dea8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 10.0s ease, visibility 4.5s ease;
+}
+
+.continue-button.visible {
+  opacity: 1; /* Make visible */
+  visibility: visible; /* Make visible */
+}
+
+
+.header{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.yama{
+  flex: auto;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
